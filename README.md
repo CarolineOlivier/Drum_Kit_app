@@ -24,8 +24,10 @@ Le **Drum Kit App** est une application web développée avec **Ruby on Rails** 
 - Design coloré utilisant des couleurs pastel avec des boutons représentant chaque son.
 
 ## Installation
+
+pour lancer postgresql
 ```bash
-sudo service postgresql start -> pour lancer postgresql
+sudo service postgresql start 
  ```
 
 Pour exécuter ce projet sur votre machine locale :

@@ -1,0 +1,39 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: #333;
+    color: white;
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .keys {
+    display: flex;
+  }
+  
+  .key {
+    border: 0.4rem solid black;
+    border-radius: 0.5rem;
+    margin: 1rem;
+    font-size: 1.5rem;
+    padding: 1rem;
+    transition: all 0.07s ease;
+    width: 5rem;
+    text-align: center;
+    cursor: pointer;
+    background: #444;
+  }
+  
+  .key.playing {
+    transform: scale(1.1);
+    border-color: #ffc600;
+    box-shadow: 0 0 1rem #ffc600;
+  }
+  
+  .sound {
+    display: block;
+    font-size: 0.8rem;
+  }
+  

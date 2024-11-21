@@ -50,7 +50,13 @@
 <audio data-key="75" src="<%= asset_path('tom.wav') %>"></audio>
 <audio data-key="76" src="<%= asset_path('tink.wav') %>"></audio>
 
-<%= javascript_include_tag "drum" %> <!-- Correction : Inclusion de drum.js juste avant la fermeture de body -->
+
+<!--  Inclusion de drum.js juste avant la fermeture de body -->
+<%= javascript_include_tag "drum", crossorigin: "anonymous" %>
+<!-- L'attribut crossorigin: "anonymous" est utilisé pour indiquer 
+que la requête pour charger le script ne nécessite pas d'informations d'identification 
+(comme des cookies ou une authentification HTTP). Cela permet souvent de résoudre les problèmes 
+de correspondance des "credentials" dans des contextes de préchargement. -->
 
 <!-- Commentaire explicatif -->
 <!-- 

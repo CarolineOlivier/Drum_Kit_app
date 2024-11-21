@@ -25,7 +25,7 @@ Le **Drum Kit App** est une application web développée avec **Ruby on Rails** 
 
 ## Installation
 
-pour lancer postgresql
+Pour lancer postgresql : 
 ```bash
 sudo service postgresql start 
  ```

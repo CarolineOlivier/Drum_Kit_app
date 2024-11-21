@@ -1,39 +1,81 @@
+/* Styles généraux */
 body {
+    background-color: #f8f8f8;
     font-family: 'Arial', sans-serif;
-    background: #333;
-    color: white;
     text-align: center;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    color: #333;
   }
   
   .keys {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 2rem;
   }
   
   .key {
-    border: 0.4rem solid black;
-    border-radius: 0.5rem;
+    border: 0.2rem solid #ccc;
+    border-radius: 10px;
     margin: 1rem;
-    font-size: 1.5rem;
-    padding: 1rem;
-    transition: all 0.07s ease;
-    width: 5rem;
-    text-align: center;
+    padding: 1rem 2rem;
     cursor: pointer;
-    background: #444;
+    font-size: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.1s ease-in-out;
   }
   
   .key.playing {
     transform: scale(1.1);
-    border-color: #ffc600;
-    box-shadow: 0 0 1rem #ffc600;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Styles pour chaque bouton avec des couleurs pastel */
+  .pastel-1 {
+    background-color: #ffd966;
+  }
+  
+  .pastel-2 {
+    background-color: #ffb84d;
+  }
+  
+  .pastel-3 {
+    background-color: #ff9999;
+  }
+  
+  .pastel-4 {
+    background-color: #e6a3d1;
+  }
+  
+  .pastel-5 {
+    background-color: #b3b3ff;
+  }
+  
+  .pastel-6 {
+    background-color: #80d4ff;
+  }
+  
+  .pastel-7 {
+    background-color: #99ffcc;
+  }
+  
+  .pastel-8 {
+    background-color: #a2ff99;
+  }
+  
+  .pastel-9 {
+    background-color: #d9ffb3;
+  }
+  
+  kbd {
+    font-size: 1.2rem;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 0.3rem 0.5rem;
   }
   
   .sound {
     display: block;
-    font-size: 0.8rem;
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
   }
   

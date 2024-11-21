@@ -1,3 +1,6 @@
+#Importmap.rb est un fichier de configuration Ruby qui permet de "mapper" les chemins des fichiers JavaScript 
+#à importer dans l'application Rails.
+
 # Pin npm packages by running ./bin/importmap
 pin "application"
 pin "@hotwired/turbo-rails", to: "turbo.min.js"

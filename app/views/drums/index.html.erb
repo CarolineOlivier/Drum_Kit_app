@@ -1,40 +1,40 @@
 <h1>Drums#index</h1>
-<p>Find me in app/views/drums/index.html.erb</p>
+<p>Appuyez sur une touche du clavier ou cliquez sur un bouton pour jouer un son</p>
 
 <div class="keys">
-  <div data-key="65" class="key">
+  <div data-key="65" class="key pastel pastel-1">
     <kbd>A</kbd>
     <span class="sound">Clap</span>
   </div>
-  <div data-key="83" class="key">
+  <div data-key="83" class="key pastel pastel-2">
     <kbd>S</kbd>
     <span class="sound">HiHat</span>
   </div>
-  <div data-key="68" class="key">
+  <div data-key="68" class="key pastel pastel-3">
     <kbd>D</kbd>
     <span class="sound">Kick</span>
   </div>
-  <div data-key="70" class="key">
+  <div data-key="70" class="key pastel pastel-4">
     <kbd>F</kbd>
     <span class="sound">OpenHat</span>
   </div>
-  <div data-key="71" class="key">
+  <div data-key="71" class="key pastel pastel-5">
     <kbd>G</kbd>
     <span class="sound">Boom</span>
   </div>
-  <div data-key="72" class="key">
+  <div data-key="72" class="key pastel pastel-6">
     <kbd>H</kbd>
     <span class="sound">Ride</span>
   </div>
-  <div data-key="74" class="key">
+  <div data-key="74" class="key pastel pastel-7">
     <kbd>J</kbd>
     <span class="sound">Snare</span>
   </div>
-  <div data-key="75" class="key">
+  <div data-key="75" class="key pastel pastel-8">
     <kbd>K</kbd>
     <span class="sound">Tom</span>
   </div>
-  <div data-key="76" class="key">
+  <div data-key="76" class="key pastel pastel-9">
     <kbd>L</kbd>
     <span class="sound">Tink</span>
   </div>
@@ -49,3 +49,14 @@
 <audio data-key="74" src="<%= asset_path('snare.wav') %>"></audio>
 <audio data-key="75" src="<%= asset_path('tom.wav') %>"></audio>
 <audio data-key="76" src="<%= asset_path('tink.wav') %>"></audio>
+
+<%= javascript_include_tag "drum" %> <!-- Correction : Inclusion de drum.js juste avant la fermeture de body -->
+
+<!-- Commentaire explicatif -->
+<!-- 
+  J'ai placé <%= javascript_include_tag "drum" %> à la fin du fichier, 
+  juste après toutes les balises <audio> pour s'assurer que le fichier JavaScript 
+  est chargé après que tous les éléments HTML soient présents dans le DOM.
+  Cela garantit que le script a accès aux éléments à manipuler dès son exécution.
+-->
+

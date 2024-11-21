@@ -1,2 +1,51 @@
 <h1>Drums#index</h1>
 <p>Find me in app/views/drums/index.html.erb</p>
+
+<div class="keys">
+  <div data-key="65" class="key">
+    <kbd>A</kbd>
+    <span class="sound">Clap</span>
+  </div>
+  <div data-key="83" class="key">
+    <kbd>S</kbd>
+    <span class="sound">HiHat</span>
+  </div>
+  <div data-key="68" class="key">
+    <kbd>D</kbd>
+    <span class="sound">Kick</span>
+  </div>
+  <div data-key="70" class="key">
+    <kbd>F</kbd>
+    <span class="sound">OpenHat</span>
+  </div>
+  <div data-key="71" class="key">
+    <kbd>G</kbd>
+    <span class="sound">Boom</span>
+  </div>
+  <div data-key="72" class="key">
+    <kbd>H</kbd>
+    <span class="sound">Ride</span>
+  </div>
+  <div data-key="74" class="key">
+    <kbd>J</kbd>
+    <span class="sound">Snare</span>
+  </div>
+  <div data-key="75" class="key">
+    <kbd>K</kbd>
+    <span class="sound">Tom</span>
+  </div>
+  <div data-key="76" class="key">
+    <kbd>L</kbd>
+    <span class="sound">Tink</span>
+  </div>
+</div>
+
+<audio data-key="65" src="<%= asset_path('clap.wav') %>"></audio>
+<audio data-key="83" src="<%= asset_path('hihat.wav') %>"></audio>
+<audio data-key="68" src="<%= asset_path('kick.wav') %>"></audio>
+<audio data-key="70" src="<%= asset_path('openhat.wav') %>"></audio>
+<audio data-key="71" src="<%= asset_path('boom.wav') %>"></audio>
+<audio data-key="72" src="<%= asset_path('ride.wav') %>"></audio>
+<audio data-key="74" src="<%= asset_path('snare.wav') %>"></audio>
+<audio data-key="75" src="<%= asset_path('tom.wav') %>"></audio>
+<audio data-key="76" src="<%= asset_path('tink.wav') %>"></audio>

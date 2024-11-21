@@ -13,7 +13,7 @@
   #Cela signifie que nous aurons une route pour /drums pointant vers drums#index, 
   #ce qui est plus propre que get "drums/index".
   resources :drums, only: [:index]
-
+  
 #Routes Spécifiques (up, service-worker, manifest) :
 # Ces routes restent telles quelles car elles ont une nature particulière 
 # et n'ont pas besoin d'être refactorisées avec resources.
